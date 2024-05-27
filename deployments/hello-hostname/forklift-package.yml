@@ -1,5 +1,5 @@
 package:
-  description: A hello-world script and systemd service
+  description: A config file to set the system's hostname to `hello-hostname`
   maintainers:
     - name: Ethan Li
       email: lietk12@gmail.com
@@ -10,5 +10,4 @@ package:
 deployment:
   provides:
     file-exports:
-      - target: overlays/etc/systemd/system/hello-world.service
-      - target: overlays/etc/systemd/system/multi-user.target.wants/hello-world.service
+      - target: overlays/etc/hostname
